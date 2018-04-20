@@ -1,3 +1,4 @@
+//document.addEventListener('DOMContentLoaded', function(){
 
 let button = document.createElement('button');
 let btnText = document.createTextNode('Add Square');
@@ -6,8 +7,10 @@ button.appendChild(btnText);
 document.body.appendChild(button);
 document.body.appendChild(containerDiv);
 
+
 let id = '0';
 button.addEventListener('click', function(){
+    console.log('here');
     let div = document.createElement('div');
     containerDiv.appendChild(div);
     div.style.backgroundColor = 'black';
@@ -66,3 +69,4 @@ function remove() {
     }
 }
 
+//});
